@@ -6,6 +6,7 @@ import Step2 from './Step2';
 import Step3 from './Step3';
 import Step4 from './Step4';
 import Step5 from './Step5';
+import StepCounter from './StepCounter';
 
 export default class Steps extends Component {
   state = {
@@ -39,6 +40,7 @@ export default class Steps extends Component {
     console.log(Step);
     return (
       <div>
+        <StepCounter stepNumber={stepNumber}/>
         {Step}
       </div>
     )

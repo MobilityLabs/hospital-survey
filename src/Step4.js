@@ -16,7 +16,7 @@ export default class Step4 extends Component {
             <input type="radio" value="5" checked={true} />
           </li>
         </ol>
-        <Link to={'/steps3'}>Back</Link>
+        <Link to={'/steps/3'}>Back</Link>
         <Link to={'/steps/5'}>Next</Link>
       </div>
     )
