@@ -1,3 +1,5 @@
+// @flow
+
 import React, {Component} from 'react';
 import {
   Link,
@@ -15,17 +17,17 @@ export default class Routes extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="app-wrapper">
           <ul>
             <li><Link to="/">Home</Link></li>
           </ul>
 
           <hr/>
-          <Route exact path="/" component={Home}/>
+          <Route exact={true} path="/" component={Home}/>
           <Route path="/steps/:stepNumber" component={Steps}/>
-          <Route exact path="/complete" component={Complete}/>
+          <Route exact={true} path="/complete" component={Complete}/>
         </div>
       </Router>
-    )
+    );
   }
 }

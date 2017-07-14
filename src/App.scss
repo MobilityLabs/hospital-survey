@@ -1,29 +1,27 @@
-.App {
-  &-header {
-    background-color: #222;
-    height: 180px;
-    padding: 20px;
-    color: white;
-    text-align: center;
-  }
+@import './_reset';
+@import './_variables';
+@import './_typography';
 
-  &-intro {
-    font-size: large;
-  }
+.app-wrapper {
+  height: 100vh;
+  max-width: 100%;
+  background-color: $body-bg;
+  padding: 3em;
 }
 
-.configs {
-  li {
-    margin: 15px 0px;
+.button {
+  $button-color: saturate(lighten($body-color, 25), 25);
+  @extend .h4;
+  background-color: $button-color;
+  color: white;
+  padding: 1em;
+  display: inline-block;
+  border: 1px solid $button-color;
+  font-size: 1em;
+  font-family: $header-font-family;
+  &:hover {
+    background-color: darken($button-color, 15);
+    border-color: darken($button-color, 15);
+    cursor: pointer;
   }
-}
-
-code {
-  border-radius: 3px;
-  padding: 2px 10px;
-  font-size: 17px;
-  margin-right: 10px;
-  background-color: rgba(222, 222, 222, 0.34);
-  border: 1px solid #cccccc;
-  color: #868686;
 }

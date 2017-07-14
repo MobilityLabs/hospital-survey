@@ -11,9 +11,11 @@ export default class Step1 extends Component {
   render() {
     return (
       <div>
-        <p>Hi {this.props.name},</p>
-
-        <p>Can you verify your birthdate?</p>
+        <h1>
+          <small>Hi {this.props.name}! You visited us recently</small>
+          We need your help to continually improve our hospital experience
+        </h1>
+        <p>First things first, can you verify your birthdate?</p>
         <form onSubmit={this.submit}>
           <input type="number" min="1" max="12" placeholder="MM" required={true}/>/
           <input type="number" min="1" max="31" placeholder="DD" required={true}/>/
@@ -21,6 +23,6 @@ export default class Step1 extends Component {
           <button type="submit">Next</button>
         </form>
       </div>
-    )
+    );
   }
 }
