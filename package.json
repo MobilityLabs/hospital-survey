@@ -2,7 +2,7 @@
   "name": "hospital-survey",
   "version": "0.1.0",
   "private": false,
-  "homepage": "http://MobilityLabs.github.io/hospital-survey",
+  "homepage": "https://MobilityLabs.github.io/hospital-survey",
   "dependencies": {
     "custom-react-scripts": "0.0.23",
     "eslint-plugin-babel": "^4.1.1",
