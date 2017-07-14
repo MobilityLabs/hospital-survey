@@ -9,6 +9,7 @@ import './App.scss';
 
 import Home from './Home';
 import Steps from './Steps';
+import Complete from './Complete';
 
 export default class Routes extends Component {
   render() {
@@ -21,7 +22,8 @@ export default class Routes extends Component {
 
           <hr/>
           <Route exact path="/" component={Home}/>
-          <Route path="/steps/:step_number" component={Steps}/>
+          <Route path="/steps/:stepNumber" component={Steps}/>
+          <Route exact path="/complete" component={Complete}/>
         </div>
       </Router>
     )
