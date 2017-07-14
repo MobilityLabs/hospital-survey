@@ -15,8 +15,9 @@ export default class Step1 extends Component {
           <small>Hi {this.props.name}! You visited us recently</small>
           We need your help to continually improve our hospital experience
         </h1>
+        <p>We value your time. This should take less than 5 minutes.</p>
         <form onSubmit={this.submit}>
-          <label>First things first, can you verify your birthdate?
+          <label>For security, can you verify your birthdate?
             <input type="date" name="birthdate" max="2017-06-01" required={true}/>
           </label>
           <button type="submit">Next</button>

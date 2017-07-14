@@ -33,6 +33,10 @@ button,
   p + &:first-of-type {
     margin-top: 0;
   }
+  &.secondary {
+    background-color: lighten($button-color, 10);
+    border: 1px solid lighten($button-color, 10);
+  }
 }
 
 
@@ -60,6 +64,10 @@ label {
 	font-weight: bold;
   input {
     display: block;
+  }
+  .radio-group & {
+    display: inline-block;
+    margin-left: 20px;
   }
 }
 

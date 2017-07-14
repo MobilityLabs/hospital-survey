@@ -11,12 +11,20 @@ import StepCounter from './StepCounter';
 export default class Steps extends Component {
   state = {
     name: 'Sean',
-    scores: {
-      registration: null,
-      waiting: null,
-      procedure: null,
-      overall: null,
-    }
+    scores: [
+      {
+        registration: 1
+      },
+      {
+        waiting: 2
+      },
+      {
+        procedure: 3
+      },
+      {
+        overall: 4
+      },
+    ]
   }
   render() {
     const {stepNumber} = this.props.match.params;
@@ -37,7 +45,6 @@ export default class Steps extends Component {
     default:
       Step = <Step1 {...this.state} {...this.props}/>;
     }
-    console.log(Step);
     return (
       <div>
         <StepCounter stepNumber={stepNumber}/>

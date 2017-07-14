@@ -5,11 +5,12 @@ export default class Step5 extends Component {
   render() {
     return (
       <div>
-        <p>Thank you for your feedback.</p>
-        <p>Do you have any other feedback for our team?</p>
+        <h2>Thank you for your feedback.</h2>
+        <label>Do you have any other feedback for our team?</label>
         <textarea/>
-        <Link to={'/steps/4'}>Back</Link>
-        <Link to={'/complete'}>Complete</Link>
+        <br/>
+        <Link className="button" to={'/complete'}>Complete</Link>
+        <Link className="button secondary right" to={'/steps/4'}>Back</Link>
       </div>
     )
   }

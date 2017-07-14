@@ -5,7 +5,7 @@ export default class StepCounter extends Component {
   render() {
     return (
       <div>
-        {this.props.stepNumber}/5
+        Step {this.props.stepNumber}/5
       </div>
     )
   }
