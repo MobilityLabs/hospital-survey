@@ -16,7 +16,7 @@ import Complete from './Complete';
 export default class Routes extends Component {
   render() {
     return (
-      <Router>
+      <Router basename="/hospital-survey/">
         <div className="app-wrapper">
           <ul>
             <li><Link to="/">Home</Link></li>
