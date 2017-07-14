@@ -15,11 +15,10 @@ export default class Step1 extends Component {
           <small>Hi {this.props.name}! You visited us recently</small>
           We need your help to continually improve our hospital experience
         </h1>
-        <p>First things first, can you verify your birthdate?</p>
         <form onSubmit={this.submit}>
-          <input type="number" min="1" max="12" placeholder="MM" required={true}/>/
-          <input type="number" min="1" max="31" placeholder="DD" required={true}/>/
-          <input type="number" min="00" max="99" placeholder="YY" required={true}/>
+          <label>First things first, can you verify your birthdate?
+            <input type="date" name="birthdate" max="2017-06-01" required={true}/>
+          </label>
           <button type="submit">Next</button>
         </form>
       </div>
