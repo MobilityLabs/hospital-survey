@@ -22,20 +22,20 @@ export default class Steps extends Component {
     const {stepNumber} = this.props.match.params;
     let Step;
     switch (stepNumber) {
-      case '2':
-        Step = <Step2 {...this.state} {...this.props}/>;
-        break;
-      case '3':
-        Step = <Step3 {...this.state} {...this.props}/>;
-        break;
-      case '4':
-        Step = <Step4 {...this.state} {...this.props}/>;
-        break;
-      case '5':
-        Step = <Step5 {...this.state} {...this.props}/>;
-        break;
-      default:
-        Step = <Step1 {...this.state} {...this.props}/>;
+    case '2':
+      Step = <Step2 {...this.state} {...this.props}/>;
+      break;
+    case '3':
+      Step = <Step3 {...this.state} {...this.props}/>;
+      break;
+    case '4':
+      Step = <Step4 {...this.state} {...this.props}/>;
+      break;
+    case '5':
+      Step = <Step5 {...this.state} {...this.props}/>;
+      break;
+    default:
+      Step = <Step1 {...this.state} {...this.props}/>;
     }
     console.log(Step);
     return (
@@ -43,6 +43,6 @@ export default class Steps extends Component {
         <StepCounter stepNumber={stepNumber}/>
         {Step}
       </div>
-    )
+    );
   }
 }

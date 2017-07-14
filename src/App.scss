@@ -12,15 +12,15 @@
 
 button,
 .button {
-  $button-color: saturate(lighten($body-color, 25), 25);
   @extend .h4;
   background-color: $button-color;
-  color: white;
-  padding: .5em 1em;
-  display: inline-block;
   border: 1px solid $button-color;
-  font-size: 1em;
+  color: white;
+  display: inline-block;
   font-family: $header-font-family;
+  font-size: 1em;
+  min-width: 10em;
+  padding: .5em 1em;
   text-decoration: none;
   &:hover {
     background-color: darken($button-color, 15);

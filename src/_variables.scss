@@ -3,3 +3,5 @@ $body-color: #022d36;
 
 $header-font-family: 'Alegreya', serif;
 $body-font-family: 'Open Sans', sans-serif;
+
+$button-color: saturate(lighten($body-color, 25), 25);
